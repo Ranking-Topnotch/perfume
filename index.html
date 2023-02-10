@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <title>Frangance</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h3 id="name">Our <span class="title-2"> Store</span></h3>
+            <i id="light" class="bi bi-lightbulb"></i>
+            <i id="dark" class="bi bi-lightbulb-fill"></i>
+        <div class="harmo">
+            <i id="open" class="bi bi-sliders"></i>
+            <i id="close" class="bi bi-x-square"></i>
+        </div>
+        <nav>
+            <ul id="ul">
+                <li>All</li>
+                <li>Perfume</li>
+                <li>Frangance</li>
+                <li>Roll-Up</li>
+                <li>Body spray</li>
+            </ul>
+        </nav>
+        <div class="input">
+            <div class="search"><i class="bi bi-search"></i></div>
+            <input type="text" placeholder="item.."/>
+        </div> 
+        <div class="product">
+            <div class="upper">
+                <section class="e-product">
+                    <img src="image/image 151.png"/>
+                    <div>
+                        <p> Perfume item</p>
+                        <span>20$</span>
+                    </div>
+                </section>
+                <section class="e-product">
+                    <img src="image/image 153.png"/>
+                    <div>
+                        <p> Perfume item</p>
+                        <span>20$</span>
+                    </div>
+                </section>
+                <section class="e-product">
+                    <img src="image/image 151.png"/>
+                    <div>
+                        <p> Roll-up item</p>
+                        <span>9$</span>
+                    </div>
+                </section>
+            </div>
+            <div class="upper">
+                <section class="e-product">
+                    <img src="image/Image 153.png"/>
+                    <div>
+                        <p> Frangance</p>
+                        <span>35$</span>
+                    </div>
+                </section>
+                <section class="e-product">
+                    <img src="image/image 152.png"/>
+                    <div>
+                        <p> Body spray item</p>
+                        <span>15$</span>
+                    </div>
+                </section>
+                <section class="e-product">
+                    <img src="image/image 151.png"/>
+                    <div>
+                        <p> Perfume item</p>
+                        <span>20$</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        const ul = document.getElementById('ul');
+        const light = document.getElementById('light');
+        const dark = document.getElementById('dark');
+        const container = document.getElementById('container');
+        const name = document.getElementById('name')
+        
+        
+        open.addEventListener('click', function(){
+            open.style.display = 'none';
+            close.style.display = 'block';
+            ul.style.display = 'block';
+        })
+        close.addEventListener('click', function(){
+            open.style.display = 'block';
+            close.style.display = 'none';
+            ul.style.display = 'none';
+        })
+
+        light.addEventListener('click', function(){
+            light.style.display = 'none'
+            dark.style.display = 'block'
+            dark.style.color = 'white'
+            container.style.backgroundColor = 'rgb(51, 48, 48)';
+            ul.style.color = 'white';
+            name.style.color = 'white'
+            //ul.style.border = '2px solid white';
+        })
+        dark.addEventListener('click', function(){
+            light.style.display = 'block'
+            dark.style.display = 'none'
+            container.style.backgroundColor = 'rgb(197, 195, 195)';
+            ul.style.color = 'black';
+            name.style.color = 'black'
+            //ul.style.border = '2px solid black';
+        })
+       
+        
+
+           //if(open.style.display === 'block'){
+            //open.style.display === 'none'
+            //close.style.display === 'block'
+           //}else{
+            //open.style.display === 'block'
+           //}
+       // })
+
+    </script>
+</body>
+</html>

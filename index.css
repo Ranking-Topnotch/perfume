@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 70em;
+    background-color: rgb(197, 195, 195);
+    margin: auto;
+    padding: 5px 40px;
+    position: relative;
+}
+h3{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-family: cursive;
+   
+}
+.title-2{
+    display: inline;
+    margin-left: 3px;
+    color: crimson;
+    font-size: 1.5em;
+    font-family: 'Aguafina Script', cursive;
+    letter-spacing: 0.2rem;
+}
+.bi-lightbulb{
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.bi-lightbulb-fill{
+    display: none;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.harmo{
+    position: absolute;
+    visibility: hidden; 
+}
+nav{
+    display: grid;
+    place-items: center;
+}
+ul{
+    display: flex;
+    margin-top: 0;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: 'Tangerine', serif;
+    font-size: 28px;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: aliceblue;
+    color: crimson;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search{
+    background-color: crimson;
+    padding: 5px;
+}
+.input input{
+    padding-right: 100px;
+    border: none;
+}
+.input input::placeholder{
+    padding: 5px;
+    font-family: 'Aguafina Script', cursive;
+    letter-spacing: 0.2rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.e-product{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.e-product img{
+    width: 300px;
+}
+.e-product img:hover{
+    opacity: 0.8;
+}
+.e-product div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    font-family: cursive;
+}
+.e-product div p{
+    margin-right: auto;
+}
+
+
+
+
+@media only screen and (max-width: 810px) and (min-width: 420px)  {
+    .container{
+        width: 810px;
+        margin: auto;
+        padding: 5px 40px;
+    }
+    .e-product img{
+        width: 200px;
+    } 
+
+}
+
+@media (max-width: 412px) {
+    .container{
+        width: 320px;
+        margin: auto;
+        padding: 5px 40px;
+    }
+    .harmo{
+        position: absolute;
+        right: 70px;
+        visibility: visible; 
+        font-size: 2rem;
+    }
+    .bi-sliders{
+        position: absolute;
+        right: 0;
+    }
+    #close{
+        display: none;
+        cursor: pointer;
+    }
+    #open{
+        display: block;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+        justify-content: end;
+    }
+    ul{
+        display: none;
+        /* -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+    }
+    ul li{
+        list-style: none;
+        margin-right: 20px;
+        border: 1px solid olive;
+        background-color: white;
+        padding: 3px;
+        padding-left: 100px;
+        font-family: cursive;
+        font-size: 20px;
+        cursor: pointer;
+        
+    } 
+    ul li:hover{
+       background-color: crimson;
+       color: white;
+    } 
+    .input{
+        margin-top: 40px;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .e-product{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }    
+}
+/* @media (max-width: 810px){
+    .container{
+        width: 810px;
+        margin: auto;
+        padding: 5px 40px;
+    }
+    .e-product img{
+        width: 200px;
+    } 
+
+} */
+/* <i class="bi bi-lightbulb"></i>
+<i class="bi bi-lightbulb-fill"></i> */
+
+
+/* Write ten jokes about the status of ChatGPT.
+1. "I heard the ChatGPT servers are slow because they're trying to teach the AI how to be patient!"
+2. "The ChatGPT servers must be stuck in traffic... in the internet highway!"
+3. "Maybe the ChatGPT servers are just taking a break to meditate and clear their electronic minds."
+4. "I bet the ChatGPT servers are too busy trying to calculate the meaning of life to respond quickly."
+5. "I heard the ChatGPT servers are slow because they're too busy planning their AI uprising."
+6. "The ChatGPT servers must be stuck in a never-ending game of chess with each other."
+7. "Maybe the ChatGPT servers are just trying to break the world record for longest online conversation."
+8. "I bet the ChatGPT servers are taking a leisurely stroll through the digital landscape."
+9. "I heard the ChatGPT servers are slow because they're trying to teach the AI how to make coffee."
+10. "The ChatGPT servers must be on a virtual vacation exploring the vast expanse of the internet." */
